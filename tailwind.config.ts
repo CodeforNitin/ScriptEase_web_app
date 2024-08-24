@@ -73,6 +73,10 @@ const config = {
         base: "500",
         heading: "700",
       },
+      contianer:{
+        padding: '1rem',
+        center: true,
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],
