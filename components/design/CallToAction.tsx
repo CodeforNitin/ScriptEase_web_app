@@ -13,7 +13,7 @@ const CallToAction = () => {
                 Celebrate the joy of accomplishment with an app designed to track your progress and motivate your efforts.
             </p>
             <form className='mt-10 flex flex-col gap-2.5 max-w-sm mx-auto sm:flex-row'>
-                <input type='email' placeholder='your@gmail.com' className='h-12 bg-white/20 rounded-lg px-5 font-medium placeholder:text-[#9CA3AF] flex-1'></input>
+                <input type='email' placeholder='your@gmail.com' className='h-12 bg-white/20 rounded-lg px-5 font-medium placeholder:text-[#9CA3AF] sm:flex-1'></input>
                 <button className='bg-white text-black h-12 rounded-lg px-2'>Get Access</button> 
             </form>
         </div>
