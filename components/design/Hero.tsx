@@ -1,8 +1,10 @@
+'use client';
 import Link from "next/link";
 import ArrowIcon from "../../public/assets/icons/arrow-w.svg";
 import CursorImage from "../../public/assets/images/cursor.png";
 import MessageImage from "../../public/assets/images/message.png";
 import Image from "next/image";
+import {motion} from 'framer-motion'
 
 const Hero = () => {
   return (
@@ -28,20 +30,30 @@ const Hero = () => {
             Real Time 
             <br /> Collaborate
           </h1>
+          <motion.div className="absolute right-[390px] top-[50px] hidden sm:inline"
+          drag
+          dragSnapToOrigin>
           <Image
             src={CursorImage}
             height="200"
             width="200"
             alt=""
-            className="absolute right-[390px] top-[50px] hidden sm:inline"
+            className="max-w-none"
+            draggable="false"
           />
+          </motion.div>
+          <motion.div className="absolute top-[26px] left-[380px] hidden sm:inline"
+          drag
+          dragSnapToOrigin>
           <Image
             src={MessageImage}
             height="200"
             width="200"
             alt=""
-            className="absolute top-[26px] left-[380px] hidden sm:inline    "
+            className="max-w-none"
+            draggable="false"
           />
+          </motion.div>
         </div>
         </div>
         <div className="flex justify-center">
